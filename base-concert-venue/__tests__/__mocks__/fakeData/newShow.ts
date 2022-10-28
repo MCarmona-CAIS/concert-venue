@@ -1,5 +1,3 @@
-import dayjs from "dayjs";
-
 import { ShowWithoutAvailableSeatCount } from "@/lib/features/shows/types";
 
 import { generateNewBand } from "./newBand";
@@ -13,6 +11,6 @@ export const generateNewShow = (
   return {
     id: showId,
     band,
-    scheduledAt: dayjs("2022-04-18").toDate(),
+    scheduledAt: new Date("2022-04-18"),
   };
 };

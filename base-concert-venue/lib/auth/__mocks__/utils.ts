@@ -1,0 +1,1 @@
+export const validateToken = jest.fn().mockResolvedValue(true);
